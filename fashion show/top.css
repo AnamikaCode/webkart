@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.login-pages{
+   display: block;
+
+  
+      }
+.form-box{
+        width: 360px;
+        height: 360px;
+        position: relative;
+        margin: 2% auto;
+        background: rgba(64, 11, 253, 0.781);
+        padding: 10px;
+        overflow: hidden;
+      }
+.button-box{
+        width: 220px; ;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: #2517e7e1;
+        border-radius: 30px;
+         }
+         .toggle-btn{
+           padding: 10px 30px;
+           cursor: pointer;
+           position: relative;
+    background: transparent;
+    outline: none;
+    border: 0px;
+        }
+        #btn{
+          top: 0;
+          left: 0;
+          position: absolute;
+          width: 110px;
+          height: 100%;
+          background: #ec9961;
+          border-radius: 30px;
+          transition: 0.5s;
+        }
+        .input-group-login{
+          top: 150px;
+          width: 280px;
+          position: absolute;
+          transition: 5s;
+    
+        }
+        .input-group-register{
+          top: 120px;
+          width: 280px;
+          position: absolute;
+          transition: 5s;
+    
+        }
+        .input-field{
+          width: 100%;
+          padding: 10px 0;
+          margin: 5px 0;
+          border-radius: 0;
+          border-top: 0;
+          border-left: 0;
+          border-bottom: 1px solid black;
+          outline: none;
+          background: transparent;
+        }
+        .submit-btn{
+          width: 80%;
+          padding: 10px 30px;
+          cursor: pointer;
+          display: block;
+          background: rgb(44, 60, 155);
+          margin: auto;
+          border: 0;
+          outline: none;
+          border-radius: 30px;
+        }
+        .check-box{ 
+          margin: 30px 10px 34px 0;
+         }
+         span{
+           color: rgb(12, 12, 14);
+           font-size: 16px;
+           position: 68px;
+           position: absolute;
+        }
+        #login{
+          left: 50px;
+        }
+        #login input{
+          color: rgb(6, 147, 241);
+          font-size: 18px;
+        }
+        #register{
+          left: 450px;
+        }
+        #register input{
+          color: rgb(16, 132, 240);
+          font-size: 18px;
+        }

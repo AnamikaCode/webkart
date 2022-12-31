@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-/awesome4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>T_Kart fashion show</title>
+</head>
+<body>  
+    <div class="header">
+        <div class="search1">
+            <form action="/action_page.php">
+         <input type="text" placeholder="Search.." name="search">
+         <button type="submit"><i class="fa fa-search"></i></button>
+        
+         </form>
+     </div>
+        <div class="icon">
+           
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+       <a href="display1.html"><i class="fas fa-user"></i></a> 
+        <a href="#"><i class="fa fa-home"></i></a>
+        </div>
+    </div>
+   
+                <input type="checkbox" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebariconToggle">
+        <div class="spinner top"></div>
+        <div class="spinner middle"></div>
+        <div class="spinner bottom"></div> 
+    </label>
+    <div id="sidebarMenu">
+        <ul class="menu">
+        <header>Login & Sign in</header>
+        <li><a href="#"><i class="fas fa-user-circle"></i>My Account</a></li>
+        <li><a href="#"><i class="fas fa-user-tie"></i>My Order</a></li>
+        <li><a href="#"><i class="fas fa-sms"></i>My Chat</a></li>
+        <li><a href="#"><i class="fas fa-bell"></i>My Notification</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i>Setting</a></li>
+        <li><a href="#"><i class="fas fa-language"></i>Choose language</a></li>
+            </ul>
+    </div>
+    <div class="logo">
+        <header>T_Kart Fashion show</header>
+    </div>
+  
+    <div id="main">
+        <img src="img.jpg" id="slideimage" width="100%" height="400px">
+</div>
+      <script>
+        function first () {
+document.getElementById("slideimage").src="img1.jpg";
+        }
+        function second () {
+document.getElementById("slideimage").src="img3.jpg";
+        }
+        function third () {
+document.getElementById("slideimage").src="img.jpg";
+        }
+        
+        setInterval(first,2000);
+        setInterval(second,4000);
+        setInterval(third,6000);
+        
+      </script>
+      <section class="filter-gallery">
+          <div class="gallery-menu">
+              <ul>
+                  <li class="active" data-filter="*">All</li>
+                  <li data-filter=".fashion">Fashion</li>
+                  <li data-filter=".beauty">Beauty</li>
+                  <li data-filter=".mobiles">Mobiles</li>
+                  <li data-filter=".electronic">Electronics</li>
+              </ul>
+          </div>
+          <div class="img-item">
+            <div class="item fashion">
+            <img src="img5.jpg" alt="img" width="100" height="100">
+            </div>
+           <div class=" item beauty" >
+         <img src="img6.jpg" alt="img" width="100" height="100">
+        </div>
+    <div class="item mobiles">
+            <img src="img 12.jpg" alt="img" width="100" height="100">
+          </div>
+       <div class="item electronic">
+            <img src="img8.jpeg" alt="img" width="100" height="100">
+        </div>
+            <div class="item fashion">
+            <img src="img9.jpg" alt="img" width="100" height="100">
+        </div>
+        <div class=" item beauty" >
+            <img src="img10.jpg" alt="img" width="100" height="100">
+        </div>
+        <div class="item mobiles">
+            <img src="img 17.jpeg" alt="img" width="100" height="100">
+            </div>
+            <div class="item fashion">
+                <img src="img11.jpg" alt="img" width="100" height="100">
+            </div>
+          
+    </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+      
+    <script type="text/javascript">
+    $('.img-item').isotope({
+  // options
+  itemSelector:'.item',
+  layoutMode: 'fitRows'
+});
+
+    $('.gallery-menu ul li').click(function(){
+    $('.gallery-menu ul li').removeClass('active');
+    $(this).addClass('active');
+
+    var selector = $ (this).attr('data-filter');
+    $('.gallery-menu').isotope({
+    filter:selector
+});
+return false;
+
+}); 
+</script>
+     
+      
+     
+    
+    
+</body>
+
+</html>
+         
